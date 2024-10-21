@@ -1,27 +1,115 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Updated to a modern font */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e7ff; /* Background color */
+    background: linear-gradient(135deg, #000000, #003e51); /* Gradient background */
+    margin: 0;
 }
 
 .container {
     text-align: center;
-    padding: 30px;
-    background-color: #ffffff; /* Background color for container */
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     width: 90%;
     max-width: 400px;
+    transition: transform 0.3s ease;
 }
 
-/* TODO: Add styles for labels, inputs, buttons, and output text */
+.container:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
 h1 {
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    color: #4a4a4a; /* Header color */
+    font-size: 2.4em;
+    margin-bottom: 25px;
+    color: #333333;
+    letter-spacing: 1px;
 }
 
-/* Add more styles here as needed */
+/* Label styles */
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+/* Input and checkbox styles */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #48c6ef; /* Focus color */
+    outline: none;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #48c6ef;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(72, 198, 239, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #6f86d6; /* Hover effect */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+button:active {
+    background-color: #355cac; /* Active state */
+}
+
+label{
+    color: rgb(47, 0, 255);
+    text-align: left;
+}
+
+
+/* Output text style */
+#passwordDisplay {
+    font-size: 1.2em;
+    margin-top:20px
+}
+#passwordOutput {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Warna latar belakang kotak */
+    border: 2px solid #ddd; /* Warna border */
+    border-radius: 10px; /* Membuat tepi kotak melengkung */
+    color: #333333;
+    word-break: break-all;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan sedikit bayangan di dalam */
+    width: 94%; /* Agar kotak mengikuti lebar container */
+    text-align: center; /* Pusatkan teks di dalam kotak */
+    min-height: 30px; /* Menyediakan minimal tinggi untuk kotak */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
