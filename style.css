@@ -100,15 +100,15 @@ label{
     font-size: 1.2em;
     margin-top: 20px;
     padding: 10px;
-    background-color: #f0f0f0; /* Warna latar belakang kotak */
-    border: 2px solid #ddd; /* Warna border */
-    border-radius: 10px; /* Membuat tepi kotak melengkung */
+    background-color: #f0f0f0; 
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
     color: #333333;
     word-break: break-all;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan sedikit bayangan di dalam */
-    width: 94%; /* Agar kotak mengikuti lebar container */
-    text-align: center; /* Pusatkan teks di dalam kotak */
-    min-height: 30px; /* Menyediakan minimal tinggi untuk kotak */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 94%;
+    text-align: center; 
+    min-height: 30px; 
     display: flex;
     align-items: center;
     justify-content: center;
